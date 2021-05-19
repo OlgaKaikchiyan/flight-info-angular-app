@@ -1,0 +1,31 @@
+.details{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(252, 245, 245);
+    padding: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.hidden::after{
+    content: '';
+}
+
+.button-wrapper{
+    background-color: rgb(221, 236, 255);
+    border-top: 1px lightblue solid;
+    text-align: center;
+    padding: 5px;
+
+    .button{
+        font-weight: bold;
+        color: blue;
+        cursor: pointer;
+    }
+}
+
+.input{
+    font-weight: 600;
+}

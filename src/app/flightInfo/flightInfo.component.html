@@ -1,0 +1,23 @@
+<div class="flightInfo-container">
+  <div class="id-wrapper">
+    <img src="{{ data.airlineLogo }}" alt="airline-logo" class="logo" />
+    <span>ID </span>
+    <span  class="input">{{ data.id }}</span>
+  </div>
+  <div>
+    <span>Airport code </span>
+    <span class="input">{{ data.airportCode }}</span>
+  </div>
+  <div>
+    <span>Location </span>
+    <span class="input" *ngFor = "let item of data.location">{{ item }}, </span>
+  </div>
+  <div>
+    <span>Milestone Type </span>
+    <span class="input" *ngFor = "let item of data.milestoneType">{{ item }}, </span>
+  </div>
+  <div>
+    <span>Product Code </span>
+    <span class="input">{{ data.productCode }}</span>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="timetable-container">
+  <div>
+    <span>Product Group </span>
+    <span class="input">{{ data.productGroup }}</span>
+  </div>
+  <div>
+    <span>DoW </span>
+    <span class="input"  *ngFor="let day of data.DoW">{{day}}, </span>
+    <span class="remaining" *ngIf="data.DoW.length > 3">{{data.DoW.length - 3}}</span>
+  </div>
+  <div>
+    <span>Open Time l </span>
+    <span class="input">{{ data.openTime1 }}</span>
+  </div>
+  <div>
+    <span>Close Time l </span>
+    <span class="input">{{ data.closeTime1 }}</span>
+  </div>
+  <div>
+    <span>Open Time ll </span>
+    <span class="input">{{ data.openTime2 }}</span>
+  </div>
+  <div>
+    <span>Close Time ll </span>
+    <span class="input"> {{ data.closeTime2 }}</span>
+  </div>
+</div>

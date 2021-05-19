@@ -1,0 +1,21 @@
+export const flight = {
+    id: 12345,
+    airlineLogo: 'https://w7.pngwing.com/pngs/254/50/png-transparent-lufthansa-swiss-international-air-lines-airline-heathrow-airport-logo-airline-miscellaneous-logo-miles-more.png',
+    airportCode: 'DXB',
+    location: ['Office', 'Warehouse'],
+    milestoneType: ['Export', 'Import', 'Transit'],
+    productCode: 'GCR',
+    productGroup: 'N/A',
+    DoW: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu'],
+    openTime1: '08:00',
+    closeTime1: '12:00',
+    openTime2: '08:00',
+    closeTime2: '12:00',
+    OPType: 'General',
+    validFrom: '10 Nov 2020',
+    validTo: '15 Nov 2020',
+    nfd: 'No',
+    exception: 'N/A',
+    lastUpdated: '29 Mar 2020',
+    fileName: 'jawhrtncaio.cvs'
+}

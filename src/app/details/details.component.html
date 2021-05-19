@@ -1,0 +1,27 @@
+  <div class="details-container">
+    <div class="details" [ngClass]="isVisible ? 'visible' : 'hidden'">
+    <div>
+      <span>OP Type </span>
+      <span class="input">{{ data.OPType }}</span>
+    </div>
+    <div>
+      <span>Valid From </span>
+      <span class="input">{{ data.validFrom }}</span>
+    </div>
+    <div>
+      <span>Valid To </span>
+      <span class="input">{{ data.validTo }}</span>
+    </div>
+    <div>
+      <span>NFD=RCF </span>
+      <span class="input">{{ data.nfd }}</span>
+    </div>
+    <div>
+      <span>Exception </span>
+      <span class="input">{{ data.exception }}</span>
+    </div>
+  </div>
+    <div class="button-wrapper">
+      <span class="button" (click) = toggleDetails()>{{isVisible ? 'Hide' : 'Show'}} Details</span>
+    </div>
+  </div>
