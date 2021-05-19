@@ -2,7 +2,7 @@
   <div class="id-wrapper">
     <img src="{{ data.airlineLogo }}" alt="airline-logo" class="logo" />
     <span>ID </span>
-    <span  class="input">{{ data.id }}</span>
+    <span class="input">{{ data.id }}</span>
   </div>
   <div>
     <span>Airport code </span>
@@ -10,11 +10,17 @@
   </div>
   <div>
     <span>Location </span>
-    <span class="input" *ngFor = "let item of data.location">{{ item }}, </span>
+    <span class="input" *ngFor="let item of data.location; index as i">
+      <span *ngIf="i < data.location.length - 1; else elseBlock">{{ item }}, </span>
+      <ng-template #elseBlock>{{ item }}</ng-template>
+    </span>
   </div>
   <div>
     <span>Milestone Type </span>
-    <span class="input" *ngFor = "let item of data.milestoneType">{{ item }}, </span>
+    <span class="input" *ngFor="let item of data.milestoneType; index as i">
+      <span *ngIf="i < data.milestoneType.length - 1; else elseBlock">{{ item }}, </span>
+      <ng-template #elseBlock>{{ item }}</ng-template>
+    </span>
   </div>
   <div>
     <span>Product Code </span>

@@ -7,6 +7,8 @@ import { TimeInfoComponent } from './timeInfo/timeInfo.component';
 import { DetailsComponent } from './details/details.component';
 import { FlightComponent } from './flight/flight.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 @NgModule({
   declarations: [					
     AppComponent,
@@ -16,7 +18,8 @@ import { FlightComponent } from './flight/flight.component';
       FlightComponent
    ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

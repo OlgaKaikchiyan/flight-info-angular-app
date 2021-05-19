@@ -13,4 +13,24 @@
     .input{
         font-weight: 600;
     }
+
+    .relative{
+        position: relative;
+
+        .tooltip{
+            
+            background-color: lightblue;
+            padding: 5px;
+            border-radius: 8px;
+            position: absolute;
+            bottom: 1vw;
+            right: -8vw;
+        }
+
+        .hidden{
+            display: none;
+        }
+    }
+
+   
 }

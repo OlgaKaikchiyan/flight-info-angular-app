@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-details',
@@ -9,6 +10,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class DetailsComponent implements OnInit {
   public isVisible = false;
+  public faChevronUp = faChevronUp;
 
   @Input() data: any
 
@@ -18,7 +20,7 @@ export class DetailsComponent implements OnInit {
   }
 
   toggleDetails() {
-    this.isVisible = !this.isVisible;
+    this.isVisible = !this.isVisible;    
   }
 
 }

@@ -1,4 +1,4 @@
-export const flight = {
+export const FLIGHT = {
     id: 12345,
     airlineLogo: 'https://w7.pngwing.com/pngs/254/50/png-transparent-lufthansa-swiss-international-air-lines-airline-heathrow-airport-logo-airline-miscellaneous-logo-miles-more.png',
     airportCode: 'DXB',

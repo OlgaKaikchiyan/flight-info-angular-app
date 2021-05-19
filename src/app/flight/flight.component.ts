@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { flight } from '../mock-flight'
+import { FLIGHT } from '../mock-flight'
 
 @Component({
   selector: 'app-flight',
@@ -8,7 +8,7 @@ import { flight } from '../mock-flight'
 })
 
 export class FlightComponent implements OnInit {
-  public flight = flight;  
+  public flight = FLIGHT;  
 
   constructor() { }
 

@@ -6,10 +6,19 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./timeInfo.component.scss'],
 })
 export class TimeInfoComponent implements OnInit {
+  public isTooltipVisible: boolean = false;
   
   @Input() data: any;
 
   constructor() {}
 
   ngOnInit() {}
+
+  showTooltip() {
+    this.isTooltipVisible = true;
+  }
+
+  hideTooltip() {
+    this.isTooltipVisible = false;
+  }
 }
