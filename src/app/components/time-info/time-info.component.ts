@@ -18,7 +18,7 @@ export class TimeInfoComponent {
 
   getDaysOfWeek(days: string[]): string {
     if(days.length <= 3) {
-      return days.join(", ")
+      return days.join(", ");
     } else {
       this.daysRemaining = days.slice(3).join(", ");
       return days.slice(0, 3).join(", ") + '...'

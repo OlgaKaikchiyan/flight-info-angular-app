@@ -1,4 +1,4 @@
-import { FlightInterface} from './shared/models/flight.model'
+import { FlightInterface} from '../models/flight.model'
 
 export const FLIGHTS: FlightInterface[] = [{
     id: 12345,
