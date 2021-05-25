@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { TimeInfoComponent } from './timeInfo.component';
+import { TimeInfoComponent } from './time-info.component';
 
 describe('TimeInfoComponent', () => {
   let component: TimeInfoComponent;

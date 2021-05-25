@@ -1,0 +1,41 @@
+<div class="timetable-container">
+  <div>
+    <span>Product Group </span>
+    <span class="input">{{ data.productGroup }}</span>
+  </div>
+  <div>
+    <span>DoW </span>
+    <span class="input">
+      {{ getDaysOfWeek(data.dayOfWeek) }}
+      <span
+        class="remaining"
+        *ngIf="data.dayOfWeek.length > 3"
+        (mouseover)="toggleTooltip()"
+        (mouseout)="toggleTooltip()"
+        >{{ data.dayOfWeek.length - 3 }}
+        <div
+          class="tooltip"
+          [ngClass]="isTooltipVisible ? 'visible' : 'hidden'"
+        >
+          {{ daysRemaining }}
+        </div>
+      </span>
+    </span>
+  </div>
+  <div>
+    <span>Open Time I </span>
+    <span class="input">{{ data.openTime1 }}</span>
+  </div>
+  <div>
+    <span>Close Time I </span>
+    <span class="input">{{ data.closeTime1 }}</span>
+  </div>
+  <div>
+    <span>Open Time II </span>
+    <span class="input">{{ data.openTime2 }}</span>
+  </div>
+  <div>
+    <span>Close Time II </span>
+    <span class="input"> {{ data.closeTime2 }}</span>
+  </div>
+</div>

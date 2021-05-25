@@ -11,4 +11,12 @@ export class FlightInfoComponent {
 
   @Input() data!: FlightInterface
 
+  public getOfficeLocations(locations: string[]): string {
+    return locations.join(', ');
+  }
+
+  public getMilestoneType(milestoneTypes: string[]): string {
+    return milestoneTypes.join(', ')
+  }
+
 }

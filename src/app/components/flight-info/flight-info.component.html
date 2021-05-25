@@ -10,16 +10,14 @@
   </div>
   <div>
     <span>Location </span>
-    <span class="input" *ngFor="let item of data.location; index as i">
-      <span *ngIf="i < data.location.length - 1; else elseBlock">{{ item }}, </span>
-      <ng-template #elseBlock>{{ item }}</ng-template>
+    <span class="input">
+      {{ getOfficeLocations(data.location) }}
     </span>
   </div>
   <div>
     <span>Milestone Type </span>
-    <span class="input" *ngFor="let item of data.milestoneType; index as i">
-      <span *ngIf="i < data.milestoneType.length - 1; else elseBlock">{{ item }}, </span>
-      <ng-template #elseBlock>{{ item }}</ng-template>
+    <span class="input">
+      {{ getMilestoneType(data.milestoneType) }}
     </span>
   </div>
   <div>

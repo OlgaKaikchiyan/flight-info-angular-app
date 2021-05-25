@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FlightInfoComponent } from './components/flight-info/flight-info.component';
-import { TimeInfoComponent } from './components/timeInfo/timeInfo.component';
+import { TimeInfoComponent } from './components/time-info/time-info.component';
 import { DetailsComponent } from './components/details/details.component';
 import { FlightComponent } from './components/flights/flights.component';
 
