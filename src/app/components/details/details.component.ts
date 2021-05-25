@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
-import { FlightInterface} from '../../flight-interface';
+import { Component, Input } from '@angular/core';
+import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
+import { FlightInterface} from '../../shared/models/flight.model';
 
 @Component({
   selector: 'app-details',
@@ -9,16 +9,12 @@ import { FlightInterface} from '../../flight-interface';
 })
 
 
-export class DetailsComponent implements OnInit {
+export class DetailsComponent {
   public isVisible: boolean = false;
   public faAngleDown = faAngleDown;
+  public faAngleUp = faAngleUp;
 
   @Input() data!: FlightInterface
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
   toggleDetails() {
     this.isVisible = !this.isVisible;    

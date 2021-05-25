@@ -1,8 +1,8 @@
-  <div class="details-container">
-    <div class="details" [ngClass]="isVisible ? 'visible' : 'hidden'">
+<div class="details-container">
+  <div class="details" [ngClass]="isVisible ? 'visible' : 'hidden'">
     <div>
       <span>OP Type </span>
-      <span class="input">{{ data.OPType }}</span>
+      <span class="input">{{ data.opType }}</span>
     </div>
     <div>
       <span>Valid From </span>
@@ -21,7 +21,19 @@
       <span class="input">{{ data.exception }}</span>
     </div>
   </div>
-    <div class="button-wrapper">
-      <span class="button" (click) = toggleDetails()>{{isVisible ? 'Hide' : 'Show'}} Details <fa-icon [ngStyle]="{color: 'darkblue'}" [icon]="faAngleDown"></fa-icon></span>
-    </div>
+  <div class="button-wrapper">
+    <span class="button" (click)="toggleDetails()"
+      >{{ isVisible ? "Hide" : "Show" }} Details
+      <fa-icon
+        *ngIf="!isVisible"
+        [ngStyle]="{ color: 'darkblue' }"
+        [icon]="faAngleDown"
+      ></fa-icon>
+      <fa-icon
+        *ngIf="isVisible"
+        [ngStyle]="{ color: 'darkblue' }"
+        [icon]="faAngleUp"
+      ></fa-icon>
+    </span>
   </div>
+</div>

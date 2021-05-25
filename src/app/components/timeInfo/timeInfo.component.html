@@ -5,32 +5,34 @@
   </div>
   <div>
     <span>DoW </span>
-    <span *ngIf="data.DoW.length > 3; else elseBlock">
-      <span class="input">{{ data.DoW[0] }}, </span>
-      <span class="input">{{ data.DoW[1] }}, </span>
-      <span class="input">{{ data.DoW[2] }}... </span>
+    <span *ngIf="data.dayOfWeek.length > 3; else elseBlock">
+      <span class="input">{{ data.dayOfWeek[0] }}, </span>
+      <span class="input">{{ data.dayOfWeek[1] }}, </span>
+      <span class="input">{{ data.dayOfWeek[2] }}... </span>
       <span
         class="remaining"
-        *ngIf="data.DoW.length > 3"
-        (mouseover)="showTooltip()"
-        (mouseout)="hideTooltip()"
-        >{{ data.DoW.length - 3 }}
+        *ngIf="data.dayOfWeek.length > 3"
+        (mouseover)="toggleTooltip()"
+        (mouseout)="toggleTooltip()"
+        >{{ data.dayOfWeek.length - 3 }}
         <div
           class="tooltip"
           [ngClass]="isTooltipVisible ? 'visible' : 'hidden'"
         >
-          <span *ngFor="let item of data.DoW; index as i">
-            <span *ngIf="i < data.DoW.length - 1; else elseBlock"
-              >{{ item }},
+          <span *ngFor="let item of data.dayOfWeek; index as i">
+            <span *ngIf="i >= 3">
+              <span *ngIf="i < data.dayOfWeek.length - 1; else elseBlock"
+                >{{ item }},
+              </span>
+              <ng-template #elseBlock>{{ item }}</ng-template>
             </span>
-            <ng-template #elseBlock>{{ item }}</ng-template>
           </span>
         </div>
       </span>
     </span>
     <ng-template #elseBlock>
-      <span class="input" *ngFor="let item of data.DoW; index as i">
-        <span *ngIf="i < data.DoW.length - 1; else elseBlock"
+      <span class="input" *ngFor="let item of data.dayOfWeek; index as i">
+        <span *ngIf="i < data.dayOfWeek.length - 1; else elseBlock"
           >{{ item }},
         </span>
         <ng-template #elseBlock>{{ item }}</ng-template>
