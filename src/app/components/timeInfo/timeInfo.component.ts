@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FlightInterface} from '../../flight-interface';
 
 @Component({
   selector: 'app-timeInfo',
@@ -8,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TimeInfoComponent implements OnInit {
   public isTooltipVisible: boolean = false;
   
-  @Input() data: any;
+  @Input() data!: FlightInterface
 
   constructor() {}
 

@@ -13,7 +13,7 @@ export class DetailsComponent implements OnInit {
   public isVisible: boolean = false;
   public faAngleDown = faAngleDown;
 
-  @Input() data: any
+  @Input() data!: FlightInterface
 
   constructor() { }
 
