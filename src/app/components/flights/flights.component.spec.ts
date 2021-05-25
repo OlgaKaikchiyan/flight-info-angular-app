@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { FlightComponent } from './flight.component';
+import { FlightComponent } from './flights.component';
 
 describe('FlightComponent', () => {
   let component: FlightComponent;

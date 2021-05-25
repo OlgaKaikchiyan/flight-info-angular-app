@@ -1,0 +1,34 @@
+.timetable-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    .remaining{
+        display: inline-block;
+        background-color: lightblue;
+        color: white;
+        padding: 1px;
+        border-radius: 3px;
+        position: relative;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+    }
+
+    .input{
+        font-weight: 600;
+    }
+
+    .tooltip{   
+        background-color: lightblue;
+        padding: 5px;
+        border-radius: 8px;
+        position: absolute;
+        bottom: 1.5vw;
+        right: -9vw;
+     }
+
+    .hidden{
+        display: none;
+    }
+}

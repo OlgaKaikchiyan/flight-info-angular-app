@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { FlightInterface} from '../../flight-interface';
 
 @Component({
   selector: 'app-flightInfo',
@@ -8,6 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class FlightInfoComponent implements OnInit {
 
+  // "Property 'data' has no initializer and is not definitely assigned in the constructor" when I try to set the input to be of type FlightInterface
   @Input() data: any
 
   constructor() { }

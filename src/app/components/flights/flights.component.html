@@ -1,0 +1,5 @@
+<div class="flight-container" *ngFor="let flight of flights ">
+  <app-flightInfo [data]="flight"></app-flightInfo>
+  <app-timeInfo [data]="flight"></app-timeInfo>
+  <app-details [data]="flight"></app-details>
+</div>

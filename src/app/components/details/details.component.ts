@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { FlightInterface} from '../../flight-interface';
 
 @Component({
   selector: 'app-details',
@@ -9,8 +10,8 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 
 export class DetailsComponent implements OnInit {
-  public isVisible = false;
-  public faChevronUp = faChevronUp;
+  public isVisible: boolean = false;
+  public faAngleDown = faAngleDown;
 
   @Input() data: any
 
